@@ -1,4 +1,4 @@
-package org.pengtao.flume.sink;
+package org.ddmg.flume.sink;
 
 /**
  * Created by yangyibo on 17/1/5.

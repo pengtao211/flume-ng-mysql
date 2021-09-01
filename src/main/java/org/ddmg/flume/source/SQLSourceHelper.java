@@ -1,15 +1,12 @@
-package org.pengtao.flume.source;
+package org.ddmg.flume.source;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
-import java.nio.charset.Charset;
 import java.util.*;
 
-import com.google.common.base.Charsets;
-import org.hibernate.cfg.Configuration;
 import org.json.simple.JSONValue;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;

@@ -18,7 +18,7 @@
  *******************************************************************************/
 
 
-package org.pengtao.flume.metrics;
+package org.ddmg.flume.metrics;
 
 /**
  * 

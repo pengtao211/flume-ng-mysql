@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  *******************************************************************************/
-package org.pengtao.flume.source;
+package org.ddmg.flume.source;
 
 import java.io.IOException;
 import java.io.Writer;
@@ -32,14 +32,13 @@ import org.apache.flume.PollableSource;
 import org.apache.flume.conf.Configurable;
 import org.apache.flume.event.SimpleEvent;
 import org.apache.flume.source.AbstractSource;
-import org.pengtao.flume.metrics.SqlSourceCounter;
+import org.ddmg.flume.metrics.SqlSourceCounter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.opencsv.CSVWriter;
 
 /*Support UTF-8 character encoding.*/
-import com.google.common.base.Charsets;
 import java.nio.charset.Charset;
 
 

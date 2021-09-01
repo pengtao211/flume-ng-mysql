@@ -1,4 +1,4 @@
-package org.pengtao.flume.source;
+package org.ddmg.flume.source;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
