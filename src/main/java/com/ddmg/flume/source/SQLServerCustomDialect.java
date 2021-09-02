@@ -1,4 +1,4 @@
-package org.ddmg.flume.source;
+package com.ddmg.flume.source;
 
 import org.hibernate.dialect.SQLServerDialect;
 import org.hibernate.type.StandardBasicTypes;

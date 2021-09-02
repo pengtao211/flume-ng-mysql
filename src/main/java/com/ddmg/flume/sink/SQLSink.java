@@ -1,4 +1,4 @@
-package org.ddmg.flume.sink;
+package com.ddmg.flume.sink;
 
 /**
  * Created by yangyibo on 17/1/5.

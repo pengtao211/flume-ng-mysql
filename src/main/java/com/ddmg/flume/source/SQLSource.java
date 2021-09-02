@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  *******************************************************************************/
-package org.ddmg.flume.source;
+package com.ddmg.flume.source;
 
 import java.io.IOException;
 import java.io.Writer;
@@ -25,6 +25,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.ddmg.flume.metrics.SqlSourceCounter;
 import org.apache.flume.Context;
 import org.apache.flume.Event;
 import org.apache.flume.EventDeliveryException;
@@ -32,7 +33,6 @@ import org.apache.flume.PollableSource;
 import org.apache.flume.conf.Configurable;
 import org.apache.flume.event.SimpleEvent;
 import org.apache.flume.source.AbstractSource;
-import org.ddmg.flume.metrics.SqlSourceCounter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

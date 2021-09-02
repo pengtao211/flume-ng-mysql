@@ -1,4 +1,4 @@
-package org.ddmg.flume.source;
+package com.ddmg.flume.source;
 
 import java.io.File;
 import java.io.FileReader;

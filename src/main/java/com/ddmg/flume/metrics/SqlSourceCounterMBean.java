@@ -18,7 +18,7 @@
  *******************************************************************************/
 
 
-package org.ddmg.flume.metrics;
+package com.ddmg.flume.metrics;
 
 /**
  * 
