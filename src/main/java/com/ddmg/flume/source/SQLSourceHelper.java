@@ -404,7 +404,7 @@ public class SQLSourceHelper {
 
     if (customQuery == null) {
       increSql = "SELECT " + columnsToSelect + " FROM " + table + " " +
-              "WHERE "+ updateTime + ">=FROM_UNIXTIME('" + currentIndex + "','%Y-%m-%d %H:%i:%s') AND " + updateTime + "<FROM_UNIXTIME('" + maxTime + "','%Y-%m-%d %H:%i:%s') " +
+              "WHERE "+ updateTime + ">FROM_UNIXTIME('" + currentIndex + "','%Y-%m-%d %H:%i:%s') AND " + updateTime + "<=FROM_UNIXTIME('" + maxTime + "','%Y-%m-%d %H:%i:%s') " +
               "order by "+updateTime+" asc";
 //      LOG.info("increSql:" + increSql);
       return increSql;

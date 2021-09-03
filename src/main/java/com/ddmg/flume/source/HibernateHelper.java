@@ -116,6 +116,7 @@ public class HibernateHelper {
 			try {
 				date = dateFormat.parse(maxtime);
 				ts = String.valueOf(date.getTime() / 1000);
+//				LOG.info("query sql:" + sqlSourceHelper.buildQuery(ts));
 				query = session.createSQLQuery(sqlSourceHelper.buildQuery(ts));
 				if (sqlSourceHelper.getMaxRows() != 0){
 					query = query.setMaxResults(sqlSourceHelper.getMaxRows());
