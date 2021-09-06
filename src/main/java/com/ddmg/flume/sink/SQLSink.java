@@ -22,16 +22,16 @@ import java.util.stream.IntStream;
 public class SQLSink extends AbstractSink implements Configurable {
 
     private Logger LOG = LoggerFactory.getLogger(SQLSink.class);
-    private String hostname;
-    private String port;
-    private String databaseName;
+//    private String hostname;
+//    private String port;
+//    private String databaseName;
     private String tableName;
     private String user;
     private String password;
     private PreparedStatement preparedStatement;
     private Connection conn;
     private int batchSize;
-//    private String url;
+    private String url;
     private String columns;
     private String sql;
     private String[] paras_list;
@@ -49,12 +49,14 @@ public class SQLSink extends AbstractSink implements Configurable {
     }
 
     public void configure(Context context) {
-        hostname = context.getString("hostname");
-        Preconditions.checkNotNull(hostname, "hostname must be set!!");
-        port = context.getString("port");
-        Preconditions.checkNotNull(port, "port must be set!!");
-        databaseName = context.getString("databaseName");
-        Preconditions.checkNotNull(databaseName, "databaseName must be set!!");
+//        hostname = context.getString("hostname");
+//        Preconditions.checkNotNull(hostname, "hostname must be set!!");
+//        port = context.getString("port");
+//        Preconditions.checkNotNull(port, "port must be set!!");
+//        databaseName = context.getString("databaseName");
+//        Preconditions.checkNotNull(databaseName, "databaseName must be set!!");
+        url = context.getString("url");
+        Preconditions.checkNotNull(url, "url must be set!!");
         tableName = context.getString("tableName");
         Preconditions.checkNotNull(tableName, "tableName must be set!!");
         user = context.getString("user");
@@ -83,8 +85,8 @@ public class SQLSink extends AbstractSink implements Configurable {
             e.printStackTrace();
         }
 
-        String url = "jdbc:mysql://" + hostname + ":" + port + "/" + databaseName +
-                "?useUnicode=true&characterEncoding=UTF-8";
+//        String url = "jdbc:mysql://" + hostname + ":" + port + "/" + databaseName +
+//                "?useUnicode=true&characterEncoding=UTF-8";
         //调用DriverManager对象的getConnection()方法，获得一个Connection对象
 
         try {
